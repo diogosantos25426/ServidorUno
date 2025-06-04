@@ -11,7 +11,7 @@ public class ServidorUNO {
 
     public static void main(String[] args) {
         try {
-            System.out.println("Servidor UNO a escutar na porta 1111...");
+            System.out.println("Servidor UNO a executar na porta 1111...");
             ServerSocket serverSocket = new ServerSocket(1111);
             Socket socket;
 

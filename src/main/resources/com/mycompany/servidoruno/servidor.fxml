@@ -4,8 +4,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.geometry.Insets?>
 
-<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.mycompany.servidoruno.ServidorController">
-    <top>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.servidoruno.ServidorController">    <top>
         <Label text="Servidor UNO" style="-fx-font-size: 24px; -fx-padding: 10;" BorderPane.alignment="CENTER"/>
     </top>
     <center>

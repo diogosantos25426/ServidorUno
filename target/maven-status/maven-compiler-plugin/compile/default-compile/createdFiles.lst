@@ -1,4 +1,5 @@
 com\mycompany\servidoruno\ServidorController.class
+com\mycompany\servidoruno\Main.class
 com\mycompany\servidoruno\ServidorUNO$ClientHandler.class
 com\mycompany\servidoruno\ServidorUNO.class
 module-info.class
