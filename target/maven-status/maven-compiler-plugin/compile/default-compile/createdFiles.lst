@@ -1,0 +1,6 @@
+com\mycompany\servidoruno\ServidorController.class
+com\mycompany\servidoruno\ServidorUNO$ClientHandler.class
+com\mycompany\servidoruno\ServidorUNO.class
+module-info.class
+com\mycompany\servidoruno\ServidorTCP.class
+com\mycompany\servidoruno\ServidorTCP$ClientHandler.class
