@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" prefHeight="600" prefWidth="800" style="-fx-background-color: green;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.clienteuno.ClienteController">
+    <children>
+        <Button fx:id="botaoConfirmarCor" layoutX="460" layoutY="360" onAction="#confirmarCor" text="Confirmar Cor" visible="false" />
+        <!-- Baralho (canto superior esquerdo) -->
+        <ImageView fx:id="baralhoView" fitHeight="120" fitWidth="80" layoutX="50" layoutY="50" />
+        <!-- Carta do meio (centro) -->
+        <ImageView fx:id="cartaMeio" fitHeight="120" fitWidth="80" layoutX="350" layoutY="240" />
+        <!-- Mão do jogador (parte inferior) -->
+        <HBox fx:id="maoJogador" alignment="CENTER" layoutX="50" layoutY="450" spacing="10" />
+        <!-- Mão do oponente (canto superior direito) -->
+        <HBox fx:id="maoOponenteHBox" alignment="CENTER" layoutX="550" layoutY="50" spacing="10" />
+        <!-- Contador de cartas do oponente -->
+        <Label fx:id="contadorOponente" layoutX="550" layoutY="180" style="-fx-font-size: 16px; -fx-text-fill: white;" text="0" />
+        <!-- Menu para escolher cor (inicialmente invisível) -->
+        <ChoiceBox fx:id="escolhaCor" layoutX="350" layoutY="360" prefWidth="100" visible="false">
+            <items>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="Vermelho" />
+                    <String fx:value="Verde" />
+                    <String fx:value="Amarelo" />
+                    <String fx:value="Azul" />
+                </FXCollections>
+            </items>
+        </ChoiceBox>
+        <!-- Botão para comprar carta -->
+        <Button fx:id="botaoComprar" layoutX="108.0" layoutY="548.0" onAction="#comprarCarta" text="Comprar Carta" />
+        <!-- Área de mensagens (para feedback) -->
+        <TextArea fx:id="areaMensagens" editable="false" layoutX="612.0" layoutY="217.0" prefHeight="100" prefWidth="198.0" />
+      <Button layoutX="231.0" layoutY="547.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" text="Uno" />
+      <Button layoutX="350.0" layoutY="547.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="100.0" text="Corta Uno" />
+    </children>
+</AnchorPane>

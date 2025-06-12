@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.clienteuno.ClienteController" prefWidth="600" prefHeight="400">
+    <children>
+        <TextField fx:id="campoNome" layoutX="20" layoutY="20" prefWidth="200" promptText="Nome"/>
+        <TextField fx:id="campoIP" layoutX="360" layoutY="20" prefWidth="100" promptText="IP"/>
+        <TextField fx:id="campoPorta" layoutX="470" layoutY="20" prefWidth="60" promptText="Porta"/>
+        <Button fx:id="botaoLigar" layoutX="240" layoutY="20" text="Ligar" onAction="#ligarServidor"/>
+        <TextArea fx:id="areaMensagens" layoutX="20" layoutY="60" prefWidth="560" prefHeight="260" editable="false"/>
+        <TextField fx:id="campoMensagem" layoutX="20" layoutY="330" prefWidth="450" promptText="Escreve a tua mensagem"/>
+        <Button fx:id="botaoEnviar" layoutX="480" layoutY="330" text="Enviar" onAction="#enviarMensagem"/>
+    </children>
+</AnchorPane>
