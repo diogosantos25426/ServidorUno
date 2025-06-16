@@ -23,9 +23,22 @@ public class Carta {
 		return cor;
 	}
 
-	public boolean podeSerJogadaSobre(Carta outra) {
-		return this.cor.equals(outra.cor) || this.valor == outra.valor || this.cor.equals("CORINGA");
+	// Método atualizado para considerar a cor escolhida após um Coringa
+	public boolean podeSerJogadaSobre(Carta outra, String corAtualEscolhida) {
+		// Se esta carta é um coringa, sempre pode ser jogada
+		if (this.cor.equals("CORINGA")) {
+			return true;
+		}
+
+		// Se a carta de cima for um coringa e uma cor tiver sido escolhida
+		if (outra.getCor().equals("CORINGA") && corAtualEscolhida != null) {
+			return this.cor.equals(corAtualEscolhida) || this.valor == outra.valor;
+		}
+
+		// Regras normais: mesma cor ou mesmo valor
+		return this.cor.equals(outra.cor) || this.valor == outra.valor;
 	}
+
 
 	@Override
 	public String toString() {
